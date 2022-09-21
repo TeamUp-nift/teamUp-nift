@@ -7,7 +7,7 @@ import {FiTwitter} from 'react-icons/fi'
 import {FiLinkedin} from 'react-icons/fi'
 
 const Footer = () => {
-   
+
      return (
           <>
             <div className={styles.footer}>
@@ -109,7 +109,7 @@ const Footer = () => {
                  </div>
 
                     {/* Links to Terms and Privacy */}
-                   <div className={styles.center}>
+                  <div className={styles.center}>
                     <div className={styles.termsPrivacy}>
                       <Link href="/Terms">
                         <h2 className={styles.h2}>Terms</h2>

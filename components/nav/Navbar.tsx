@@ -24,7 +24,7 @@ const Nav = () => {
 
      return (
       <>
-          <nav className="shadow-sm bg-orange-400 fixed w-full z-10">
+          <nav className="shadow-sm bg-gradient-to-r from-[#04091E] to-[#00D0CC] fixed w-full z-10">
             <div className="w-full">
               <div className="flex items-center h-20 w-full">
                 {/* Block 1 on the Nav */}
@@ -43,22 +43,22 @@ const Nav = () => {
                     >
                       <MdSearch className="" />
                     </button>
-              <input 
+                  <input 
                    type="text"
                     placeholder="Search items, collections, accounts"
-                    className="p-3 pl-14 md:text-md font-regular border-none
+                    className="p-3 pl-14 md:text-md font-regular placeholder:text-sm
                      focus:outline-none focus:border-1 w-[400px]
-                     md:w-[450px] rounded bg-gray-500 text-white
+                     md:w-[330px] bg-gradient-to-r from-gray-500 to-gray-500 text-white
                      md:top-0"
                     />
-               </form>
-           </div>
+                  </form>
+                </div>
                       {/* md - medium device on mobile device, it will display this div as block */}
                       <div className="hidden md:block">
                           <div className="ml-10 flex items-baseline space-x-4">
                             <Link href="/Explore"
                              >
-                              <span className="cursor-pointer rounded-2xl hover:bg-orange-400 text-white font-regular px-3 py-2 text-md hover:text-black">
+                              <span className="cursor-pointer rounded-2xl hover:bg-orange-400 text-white font-regular px-3 py-2 text-md hover:text-white">
                                 Explore</span>
                             </Link>
 
@@ -148,7 +148,7 @@ const Nav = () => {
               {(ref) => (
                  //this will handle the mobile menu
                 <div className='md:hidden id=mobile-menu'>
-                  <div ref={ref} className='bg-[#04091E] px-6 pt-10 pb-3 space-y-8 -top-3 sm:px-3'>
+                  <div ref={ref} className='bg-gradient-to-r from-[#04091E] to-[#00D0CC] px-6 pt-10 pb-3 space-y-8 -top-3 sm:px-3'>
                     {/* Search button is here */}
               <div className="absolute md:block">
                <form className="relative md:static -top-8 left-3">
@@ -161,9 +161,9 @@ const Nav = () => {
                <input 
                    type="text"
                     placeholder="Search items, collections, accounts"
-                    className="p-3 pl-14 md:text-md font-regular border-none
+                    className="p-3 pl-14 md:text-md font-regular
                      focus:outline-none  w-[400px]
-                     md:w-[350px] rounded bg-gray-500 text-white
+                     md:w-[350px] bg-gradient-to-r from-gray-500 to-gray-500 text-white
                      md:top-0"
                     />
                </form>

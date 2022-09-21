@@ -1,9 +1,14 @@
 import React from 'react'
+import Header from '../components/header/Header'
+import NFTProcess from '../components/nftProcess/NFTProcess'
+import MoreDetails from '../components/moreDetails/MoreDetails'
 
 const Home = () => {
      return (
-          <div>
-               
+          <div className="">
+               <Header />
+               <NFTProcess />
+               <MoreDetails />
           </div>
      )
 }

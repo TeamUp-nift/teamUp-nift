@@ -1,0 +1,109 @@
+
+.process_content {
+   padding-top: 120px;
+   padding-bottom: 120px;
+   position: relative;
+   background: linear-gradient(73.89deg, rgba(4, 9, 30, 0.7) 3.59%, rgba(20, 216, 192, 0.7) 90.77%);
+
+   .wrapper {
+    margin: 0 auto;
+    max-width: calc(100% - 2.875rem);
+    width: 100%;
+
+    @media (min-width: 1024px) {
+     max-width: calc(100% - 7.5rem);
+    }
+
+    @media (min-width: 480px) {
+     max-width: calc(100% - 3.75rem);
+   }
+
+   .container {
+     display: flex;
+     gap: 1.875rem;
+    //  border: 1px solid red;
+     padding-left: 100px;
+     padding-right: 100px;
+     padding-top: 100px;
+
+     .processContent {
+          //  max-width: 50%;
+          //  width: 100%;
+          //  align-items: center;
+
+        .process_title {
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 140%;
+          color: #FFFFFF;
+          text-align: center;
+       }
+
+       .process__container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2.5rem;
+          margin-top: 40px;
+
+               @media (max-width: 1023.98px) {
+                   grid-template-columns: 1fr 1fr;
+                   gap: 1.5rem;
+              }
+
+              @media (max-width: 680px) {
+                    grid-template-columns: 1fr;
+                    gap: 1rem;
+              }
+
+          .process__item {
+             background: linear-gradient(180deg, rgba(255, 255, 255, 0.13) 7.27%, rgba(255, 255, 255, 0.21) 97.33%);
+             backdrop-filter: blur(16px);
+             padding: 20px;
+             border: none;
+
+            .process_item_image {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+
+               .process_image_bg {
+                   display: flex;
+                   background-color: #FFFFFF;
+                   border-radius: 60%;
+                   padding: 20px;
+
+                  .img {
+                      width: 20px;
+                      height: 20px;   
+                   }
+               }
+
+          
+            }
+
+            .process__title {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 150%;
+              color: #FFFFFF;
+              margin-top: 30px;
+            }
+
+            .process__desc {
+              margin-top: 15px;
+              font-weight: 300;
+              font-size: 13px;
+              line-height: 175%;
+              color: #FFFFFF;
+              max-width: px;
+              margin-bottom: 30px;
+            }
+          }
+       }
+
+     }
+
+   }
+
+   }
+}

@@ -1,0 +1,60 @@
+
+
+.more {
+   padding-top: 120px;
+   padding-bottom: 120px;
+   position: relative;
+  
+   .wrapper {
+    margin: 0 auto;
+    max-width: calc(100% - 2.875rem);
+    width: 100%;
+
+    @media (min-width: 1024px) {
+     max-width: calc(100% - 7.5rem);
+    }
+
+    @media (min-width: 480px) {
+     max-width: calc(100% - 3.75rem);
+   }
+
+   .container {
+     display: flex;
+     // gap: 1.875rem;
+     // padding-left: 100px;
+     // padding-right: 100px;
+     padding-top: 100px;
+
+     .clientLogo_container {
+        display: flex;
+        align-items: center;
+        padding-left: 150px;
+        width: fit-content;
+     //    -webkit-animation: scrollFromLefttoRight 5s ease-in-out 1s infinite;
+     //    animation: scrollFromLefttoRight 5s ease-in-out 1s infinite;
+
+       .logo_img {
+          opacity: 0.5;
+          margin-right: 30px;
+       }
+
+          @keyframes scrollFromLefttoRight {
+          0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+          }
+          50% {
+            -webkit-transform: translateX(-68%);
+            transform: translateX(-68%);
+          }
+          100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+          }
+        }
+        
+      }
+
+     }
+   }
+}
