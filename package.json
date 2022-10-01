@@ -14,13 +14,21 @@
     "@headlessui/react": "^1.7.1",
     "@material-ui/icons": "^4.11.3",
     "@mui/material": "^5.10.5",
+    "@rainbow-me/rainbowkit": "^0.6.1",
+    "@sanity/client": "^3.4.1",
+    "connectkit": "^0.0.2",
+    "dotenv": "^16.0.2",
+    "ethers": "^5.7.1",
+    "ipfs-http-client": "^58.0.1",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.0",
     "react-icons": "^4.4.0",
-    "react-languages-select": "^1.0.20",
     "react-scroll": "^1.8.7",
-    "sass": "^1.54.9"
+    "sass": "^1.54.9",
+    "wagmi": "^0.6.7",
+    "web3modal": "^1.9.9"
   },
   "devDependencies": {
     "@types/node": "18.7.18",
@@ -33,5 +41,10 @@
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8",
     "typescript": "4.8.3"
-  }
+  },
+  "browser": {
+  "fs": false,
+  "path": false,
+  "os": false
+}
 }

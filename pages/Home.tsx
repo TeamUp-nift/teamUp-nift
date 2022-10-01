@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Header from '../components/header/Header'
 import NFTProcess from '../components/nftProcess/NFTProcess'
 import MoreDetails from '../components/moreDetails/MoreDetails'
 
 const Home = () => {
+ 
      return (
           <div className="">
                <Header />

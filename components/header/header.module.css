@@ -1,0 +1,131 @@
+.hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#04091E), color-stop(53.12%, #21B99B), to(#0041BE));
+  background: linear-gradient(180deg, #04091E 0%, #21B99B 53.12%, #0041BE 100%);
+}
+
+.hero .wrapper {
+  margin: 0 auto;
+  max-width: calc(100% - 2.875rem);
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .hero .wrapper {
+    max-width: calc(100% - 7.5rem);
+  }
+}
+
+@media (min-width: 480px) {
+  .hero .wrapper {
+    max-width: calc(100% - 3.75rem);
+  }
+}
+
+.hero .wrapper .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.875rem;
+  padding-top: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@media (max-width: 1023.98px) {
+  .hero .wrapper .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.hero .wrapper .container .heroContent {
+  max-width: 50%;
+  width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .hero .wrapper .container .heroContent {
+    max-width: 100%;
+  }
+}
+
+.hero .wrapper .container .heroContent .heroTitle {
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 130%;
+  color: #FFFFFF;
+  max-width: 631px;
+}
+
+@media (max-width: 1023.98px) {
+  .hero .wrapper .container .heroContent .heroTitle {
+    margin: 0 auto;
+  }
+}
+
+.hero .wrapper .container .heroContent .heroDesc {
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+
+.hero .wrapper .container .heroContent .heroBtn {
+  margin-top: 60px;
+}
+
+.hero .wrapper .container .heroContent .heroBtn .btnprimary {
+  border-radius: 30px;
+  padding: 15px 25px;
+  color: #747681;
+  background: #FFFFFF;
+  margin-right: 20px;
+}
+
+.hero .wrapper .container .heroContent .heroBtn .btnsecondary {
+  border: 1px solid #FFFFFF;
+  border-radius: 30px;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero .wrapper .container .heroContent .heroBtn .btnsecondary:hover {
+  background: #FFFFFF;
+  color: #747681;
+}
+
+.hero .wrapper .container .heroImg {
+  margin-top: -50px;
+}
+
+@media (max-width: 1023.98px) {
+  .hero .wrapper .container .heroImg {
+    margin-top: 0 !important;
+    max-width: 500px;
+  }
+}
+
+.hero .wrapper .container .heroImg .figure {
+  position: relative;
+}
+
+.hero .wrapper .container .heroImg .figure .heroImage {
+  max-width: 50%;
+  width: 100%;
+  height: 300px;
+}
+/*# sourceMappingURL=header.module.css.map */

@@ -20,39 +20,134 @@
 
    .container {
      display: flex;
-     // gap: 1.875rem;
-     // padding-left: 100px;
-     // padding-right: 100px;
+     gap: 1.875rem;
+     padding-left: 100px;
+     padding-right: 100px;
      padding-top: 100px;
 
-     .clientLogo_container {
-        display: flex;
+     @media (max-width: 1023.98px) {
         align-items: center;
-        padding-left: 150px;
-        width: fit-content;
-     //    -webkit-animation: scrollFromLefttoRight 5s ease-in-out 1s infinite;
-     //    animation: scrollFromLefttoRight 5s ease-in-out 1s infinite;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+     }
 
-       .logo_img {
-          opacity: 0.5;
-          margin-right: 30px;
-       }
+     // .clientLogo_container {
+     //    display: flex;
+     //    align-items: center;
+     //    padding-left: 150px;
+     // //    width: fit-content;
+     // //    -webkit-animation: scrollFromLefttoRight 5s ease-in-out 1s infinite;
+     // //    animation: scrollFromLefttoRight 5s ease-in-out 1s infinite;
 
-          @keyframes scrollFromLefttoRight {
-          0% {
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
-          }
-          50% {
-            -webkit-transform: translateX(-68%);
-            transform: translateX(-68%);
-          }
-          100% {
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
-          }
-        }
+     //   .logo_img {
+     //      // opacity: 0.5;
+     //      margin-left: -200px;
+     //   }
+
+     // @keyframes scrollFromLefttoRight {
+     //      0% {
+     //        -webkit-transform: translateX(0);
+     //        transform: translateX(0);
+     //      }
+     //      50% {
+     //        -webkit-transform: translateX(-68%);
+     //        transform: translateX(-68%);
+     //      }
+     //      100% {
+     //        -webkit-transform: translateX(0);
+     //        transform: translateX(0);
+     //      }
+     //    }
         
+     //  }
+
+      .more__content {
+           max-width: 50%;
+           width: 100%;
+
+           @media (max-width: 1023.98px) {
+              max-width: 100%;
+           }
+
+           .title {
+               font-weight: 600;
+                font-size: 50px;
+                line-height: 140%;
+                color: #04091E;
+                max-width: 500px;
+
+                @media(max-width: 1023.98px) {
+                    margin: 0 auto;
+                }
+           }
+
+           .desc {
+               margin-top: 20px;
+               font-weight: 300;
+               font-size: 16px;
+               line-height: 160%;
+               color: #747681;
+           }
+
+          .moreBtn {
+               margin-top: 40px;
+                 
+               .btnprimary {
+                    border-radius: 30px;
+                    padding: 15px 25px;
+                    color: #FFFFFF;
+                    background: linear-gradient(95.49deg, #FCAD02 -36.87%, #FF0041 98.63%);
+                    border: 1px solid #CDD6D7;
+                    margin-right: 20px;
+
+                       @media (max-width: 1023.98px) {
+                        margin-right: 0px;
+                      }
+               }
+
+               .btnsecondary {
+                    border: 1px solid #747681;
+                    border-radius: 30px;
+                    padding: 15px 25px;
+                    text-decoration: none;
+                    color: #747681;
+                    transition: all 0.5s ease-in-out;
+
+                           
+                    &:hover {
+                       color: #FFFFFF;
+                      background: linear-gradient(95.49deg, #FCAD02 -36.87%, #FF0041 98.63%);
+                      border: 1px solid #CDD6D7;
+                    }
+
+                      @media (max-width: 1023.98px) {
+                        margin-top: 20px;
+                      }
+                }
+             }
+           }
+
+      
+      
+       
+           .more__image {
+           margin-top: -70px;
+        
+          @media (max-width: 1023.98px) {
+               margin-top: 0!important;
+               max-width: 500px;
+          }
+
+          .figure__item {
+               position: relative;
+
+               .image {
+                    max-width: 50%;
+                   width: 100%;
+                   height: 300px;
+               }
+          }
       }
 
      }

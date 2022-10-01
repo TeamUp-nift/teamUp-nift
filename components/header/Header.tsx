@@ -14,11 +14,11 @@ const Header = () => {
                     <p className={styles.heroDesc}>On the world's Best & largest NFT marketplace</p>
                     {/* Link is here */}
                     <div className={styles.heroBtn}>
-                    <Link href="/Explore">
+                    <Link href="/explore">
                          <button className={styles.btnprimary}>Explore</button>
                     </Link>
 
-                      <Link href="/Create">
+                      <Link href="/create/createItem">
                          <button className={styles.btnsecondary}>Create</button>
                     </Link>
                     </div>

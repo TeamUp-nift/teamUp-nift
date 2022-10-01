@@ -5,14 +5,13 @@ import Image from 'next/image'
 import logo from '../../assets/Logo.svg'
 import {MdSearch} from 'react-icons/md'
 import {RiUser3Line} from 'react-icons/ri'
+import {MdOutlineAccountBalanceWallet} from 'react-icons/md'
 import Button from './Button'
-//@dev - Alternate for a tag. In Next js we use Link for ref
-// import {Link} from 'react-scroll'
-//@dev - for smooth transition between tabs
+import { useDisconnect } from "wagmi";
 import {Transition} from '@headlessui/react'
 
 const Nav = () => {
-
+     const { disconnect } = useDisconnect();
     const [click, setClick] = useState(false)
     // const [dropdown, setDropdown] = useState(false)
     
@@ -30,7 +29,9 @@ const Nav = () => {
                 {/* Block 1 on the Nav */}
                   <div className="flex items items-center mx-20 justify-between w-full">
                       <div className="flex justify-center items-center flex-shrink-0">
+                        <Link href='/'>
                          <Image src={logo} className="cursor-pointer text-xl" alt="NIFT LOGO" />
+                         </Link>
                       </div>
               {/* Search button is here */}
               <div className="relative hidden md:block">
@@ -56,8 +57,7 @@ const Nav = () => {
                       {/* md - medium device on mobile device, it will display this div as block */}
                       <div className="hidden md:block">
                           <div className="ml-10 flex items-baseline space-x-4">
-                            <Link href="/Explore"
-                             >
+                            <Link href="/explore/0x61eB2FD2d02Fe9EBe69867E8ef9a55E9346Dc6d3">
                               <span className="cursor-pointer rounded-2xl hover:bg-orange-400 text-white font-regular px-3 py-2 text-md hover:text-white">
                                 Explore</span>
                             </Link>
@@ -80,15 +80,21 @@ const Nav = () => {
                             </Link>
 
 
-                            <Link href="/Create">
+                            <Link href="/create/createItem">
                              <span className="cursor-pointer text-white px-5 py-2 rounded-3xl bg-gradient-to-r from-orange-500 to-red-500 hover:to-yellow-500 ...">
                               Create
                               </span> 
                             </Link>
                             
                             {/* user button */}
-                            <button className="px-3 text-white cursor-pointer">
-                            <RiUser3Line className="" />
+                            <button className="pl-2 text-white cursor-pointer">
+                            <RiUser3Line />
+                            </button>
+
+                            <button className="pl-2 text-white cursor-pointer"
+                             onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => disconnect}
+                            >
+                             <MdOutlineAccountBalanceWallet />
                             </button>
                             
                           </div>
@@ -169,7 +175,7 @@ const Nav = () => {
                </form>
            </div>
            
-                    <Link href='/Explore'>
+                    <Link href='/explore/0x61eB2FD2d02Fe9EBe69867E8ef9a55E9346Dc6d3'>
                       <span  className='cursor-pointer hover:bg-orange-400 text-white hover:text-white block px-3 py-2 rounded-md text-base font-medium'>
                         Explore
                       </span>
@@ -196,6 +202,10 @@ const Nav = () => {
                        <button className="px-3 text-white cursor-pointer">
                           <RiUser3Line className="" />
                       </button>
+
+                       <button className="pl-2 text-white cursor-pointer">
+                             <MdOutlineAccountBalanceWallet />
+                        </button>
                   </div>
                 </div>
               )}
